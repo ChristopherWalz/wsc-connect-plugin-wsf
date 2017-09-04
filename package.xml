@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.cwalz.wscConnectWsf" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename>WSC-Connect WSF</packagename>
+		<packagedescription>Native implementation of the WSF in WSC-Connect</packagedescription>
+		<version>3.0.0</version>
+		<date>2017-09-04</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author>Christopher Walz</author>
+		<authorurl>http://www.wsc-connect.com</authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="3.0.4">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="3.0.9">de.cwalz.wscConnect</requiredpackage>
+		<requiredpackage minversion="5.0.8">com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+
+	<excludedpackages>
+		<excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<instruction application="wbb" type="file" />
+		<instruction type="eventListener" />
+	</instructions>
+</package>
